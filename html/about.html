@@ -22,6 +22,20 @@
 				-5px 10px 0 #000,
 				0px 0px 0 #000;  
 		}
+		h2 {
+			font-family: "Darumadrop One", sans-serif;
+			font-weight: 400;
+			font-style: normal;
+			font-size: 55px;
+			text-align: center;
+			color: white;
+			text-shadow:
+					0px 0px 0 #000,
+					0px -0px 0 #000,
+					-4px 5px 0 #000,
+					0px 0px 0 #000;
+			line-height: 0.2;
+		}
 		p {
 			font-family: "Libre Caslon Condensed", serif;
 			font-optical-sizing: auto;
@@ -29,6 +43,12 @@
 			font-style: normal;
 			font-size: 25px;
 			text-align: center;
+		}
+		.left {
+			text-align: left;
+		}
+		.right {
+			text-align: right;
 		}
 		a {
 			font-family: "Libre Caslon Condensed", serif;
@@ -40,15 +60,57 @@
 			color: white;
 		
 		}
+		.container-top {
+			display: grid;
+			gap: 50px;
+			grid-template-columns: auto 200px 350px auto;
+			padding: 10px;
+		}
+		.container-mid {
+			display: grid;
+			gap: 50px;
+			grid-template-columns: auto 525px auto;
+			padding: 10px;
+		}
+		.container-bottom {
+			display: grid;
+			gap: 50px;
+			grid-template-columns: auto 300px 150px auto;
+			padding: 10px;
+		}
 	</style>
 </head>
 <body>
 <center><a href="../index.html">Home</a></center>
 <h1 class="strokeme">about me</h1>
-<p>Details about me ...<br>
-</p>
-<center>
-<img src="../media/GIFs/cow_web.gif" alt="moooooo" style="width:150px;" margin: auto;>
-</center>
+
+<!-- portrait section -->
+<div class="container-top">
+	<div></div>
+	<div> <img src="../media/images/portraits/walker.png" alt="Walker" style="width:200px" margin: auto> </div>
+	<div><p class="left">I'm Walker!<br><br>
+		I make up the 'Mylo' in Mylosoft<br><br>
+		I'm an Austin-based Engineer<br></p>
+	</div>
+	<div></div>
+</div>
+
+<!-- lower text section -->
+<div class="container-mid">
+	<div></div>
+	<div><p>I work on <a href="../html/games.html">games!</a><br>
+		<p class="left">sometimes alone,<br></p>
+		<p class="right">sometimes with friends!<br></p>
+	</div>
+	<div></div>
+</div>
+
+<!-- lower text section -->
+<div class="container-bottom">
+	<div></div>
+	<div></div>
+	<div><img src="../media/GIFs/cow_web.gif" alt="moooooo" style="width:150px;" margin: auto;></div>
+	<div></div>
+</div>
 </body>
 </html>
